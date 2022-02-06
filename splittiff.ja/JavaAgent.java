@@ -1,15 +1,8 @@
 import lotus.domino.*;
 
-import java.awt.AWTException;
-import java.awt.Robot;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.*;
-import javax.imageio.stream.FileImageInputStream;
-import javax.imageio.stream.ImageInputStream;
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
@@ -17,14 +10,6 @@ import com.sun.media.jai.codec.FileSeekableStream;
 import com.sun.media.jai.codec.ImageCodec;
 import com.sun.media.jai.codec.ImageDecoder;
 import com.sun.media.jai.codec.TIFFEncodeParam;
-
-import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-
-import java.util.*;
 
 public class JavaAgent extends AgentBase {
 
@@ -34,7 +19,7 @@ public class JavaAgent extends AgentBase {
           Session session = getSession();
           AgentContext agentContext = session.getAgentContext();
 
-          String pathtofile="C:/testfiles/Буч Г. - Объектно-ориентированное программирование с примерами применения - 1992 (2).tiff";
+          String pathtofile="C:/testfiles/ГЃГіГ· Гѓ. - ГЋГЎГєГҐГЄГІГ­Г®-Г®Г°ГЁГҐГ­ГІГЁГ°Г®ГўГ Г­Г­Г®ГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГҐ Г± ГЇГ°ГЁГ¬ГҐГ°Г Г¬ГЁ ГЇГ°ГЁГ¬ГҐГ­ГҐГ­ГЁГї - 1992 (2).tiff";
           
           FileSeekableStream ss = new FileSeekableStream(pathtofile);
           ImageDecoder dec = ImageCodec.createImageDecoder("tiff", ss, null);
