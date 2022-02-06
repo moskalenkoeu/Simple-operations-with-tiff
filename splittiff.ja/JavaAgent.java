@@ -19,7 +19,7 @@ public class JavaAgent extends AgentBase {
           Session session = getSession();
           AgentContext agentContext = session.getAgentContext();
 
-          String pathtofile="C:/testfiles/Áó÷ Ã. - Îáúåêòíî-îðèåíòèðîâàííîå ïðîãðàììèðîâàíèå ñ ïðèìåðàìè ïðèìåíåíèÿ - 1992 (2).tiff";
+          String pathtofile="C:/testfiles/sample.tiff";
           
           FileSeekableStream ss = new FileSeekableStream(pathtofile);
           ImageDecoder dec = ImageCodec.createImageDecoder("tiff", ss, null);
