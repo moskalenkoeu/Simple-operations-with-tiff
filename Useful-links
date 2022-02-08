@@ -1,4 +1,4 @@
-Ссылки на полезные статьи по работе с файлами формата tiff:
+Ссылки на полезные статьи и сайты по работе с файлами формата tiff:
 
 TIFF Developement In Java: TIFF page extraction using JAI (Java Advanced Imaging)
 dipakpardesi.blogspot.com/2010/01/tiff-page-extraction-using-jai-java_27.html
@@ -14,3 +14,6 @@ http://www.libtiff.org/
 
 ImageI/O-Ext Deployment
 http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.3.X/1.3.2/
+
+Очень неплохой набор расширений для обработки изображений
+https://github.com/haraldk/TwelveMonkeys
